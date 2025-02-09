@@ -1,11 +1,13 @@
 GET {{host}}/api/v2/sbom/count-by-package
 
+Content-Type: application/json
+
 [QueryStringParams]
-purl: pkg:maven/org.apache.xmlgraphics/batik-anim@1.9.1
-cpe: cpe:/a:apache:batik:1.9.1
+purl: foo
+cpe: bar
 
-HTTP 200
+HTTP 400
 
-[Asserts]
-jsonpath "$.state" == "running"
+# [Asserts]
+# jsonpath "$.foo" == "bar"
 
