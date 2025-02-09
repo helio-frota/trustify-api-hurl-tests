@@ -24,7 +24,7 @@ jobs:
           done
       - name: Run the tests
         run: |
-          ./hurl --test --variables-file .env *.hurl
+          ./hurl --test --variables-file .env hurls/*.hurl
       - name: Stop trustify pm-mode
         run: |
           killall trustd-pm
