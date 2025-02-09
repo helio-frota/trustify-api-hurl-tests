@@ -21,6 +21,7 @@ jobs:
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
             echo "Waiting for trustd-pm..."
             sleep 2
+          done
       - name: Dataset upload test
         run: |
           ./hurl --test --variables-file .env hurls/dataset/uploadDataset.hurl
