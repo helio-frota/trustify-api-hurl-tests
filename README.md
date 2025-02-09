@@ -1,0 +1,1 @@
+# trustify-api-hurl-tests
