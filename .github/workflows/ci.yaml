@@ -15,21 +15,19 @@ jobs:
         run: |
           curl -L -o hurl.tar.gz https://github.com/Orange-OpenSource/hurl/releases/download/6.0.0/hurl-6.0.0-x86_64-unknown-linux-gnu.tar.gz
           tar -xzf hurl.tar.gz --strip-components=2
-      - name: Trustify pm-mode
+      - name: Run trustify pm-mode
         run: |
           AUTH_DISABLED=true ./trustd-pm &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
             echo "Waiting for trustd-pm..."
             sleep 2
           done
-      - name: Dataset upload test
+      - name: Dataset test
         run: |
           ./hurl --test --variables-file .env hurls/dataset/uploadDataset.hurl
-         done
-      - name: Tests
+      - name: Run the tests
         run: |
           ./hurl --test --variables-file .env hurls/*.hurl
       - name: Stop trustify pm-mode
         run: |
           killall trustd-pm
-
