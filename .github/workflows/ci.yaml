@@ -6,6 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Download and extract trustify-pm
         run: |
           curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.2/trustd-pm-0.2.2-x86_64-unknown-linux-gnu.tar.gz
@@ -23,7 +24,7 @@ jobs:
           done
       - name: Run the tests
         run: |
-          ./hurl --test --variables-file .env .
+          ./hurl --test --variables-file .env *.hurl
       - name: Stop trustify pm-mode
         run: |
           killall trustd-pm
