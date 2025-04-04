@@ -2,8 +2,8 @@
 
 ls -losht
 pwd
-psql_path="$HOME/trustify-api-hurl-tests/.trustify/postgres/17.2.0/bin/psql"
-dump_path="$HOME/trustify-api-hurl-tests/dump.sql"
+psql_path="$HOME/work/trustify-api-hurl-tests/trustify-api-hurl-tests/.trustify/postgres/17.2.0/bin/psql"
+dump_path="$HOME/work/trustify-api-hurl-tests/trustify-api-hurl-tests/dump.sql"
 
 pg_port=$(netstat -plunt 2>/dev/null | grep postgres | grep LISTEN | awk '{print $4}' | cut -d':' -f2 | sed '/^$/d')
 
