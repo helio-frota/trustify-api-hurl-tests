@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-psql_path="$HOME/trustify/.trustify/postgres/17.2.0/bin/psql"
+psql_path="$HOME/.trustify/postgres/17.2.0/bin/psql"
 dump_path="$HOME/dump.sql"
 
 pg_port=$(netstat -plunt 2>/dev/null | grep postgres | grep LISTEN | awk '{print $4}' | cut -d':' -f2 | sed '/^$/d')
