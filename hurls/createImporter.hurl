@@ -1,4 +1,7 @@
 POST {{host}}/api/v2/importer/string_value
+[Options]
+skip: true
+
 ```json
 {
   "sbom": {
@@ -20,3 +23,5 @@ POST {{host}}/api/v2/importer/string_value
   }
 }
 ```
+
+HTTP 201
