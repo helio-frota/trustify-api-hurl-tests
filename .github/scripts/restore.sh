@@ -26,5 +26,3 @@ echo "Restoring trustify database..."
 PGPASSWORD="trustify" "$psql_path" -U postgres -d trustify -p "$pg_port" < "$dump_path"
 
 echo "Restored!"
-
-rm dump_path
