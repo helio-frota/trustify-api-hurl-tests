@@ -23,7 +23,6 @@ jobs:
         run: |
           curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
           gzip -d dump.sql.gz
-          rm dump.sql.gz
       - name: Download and extract trustify-pm
         run: |
           curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.14/trustd-pm-0.2.14-x86_64-unknown-linux-gnu.tar.gz
