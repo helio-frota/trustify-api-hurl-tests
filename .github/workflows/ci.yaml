@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Get the dump
-        run: |
-          curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
-          gzip -d dump.sql.gz
+      # - name: Get the dump
+      #   run: |
+      #     curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
+      #     gzip -d dump.sql.gz
       - name: Download and extract trustify-pm
         run: |
           curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.2/trustd-pm-0.2.2-x86_64-unknown-linux-gnu.tar.gz
