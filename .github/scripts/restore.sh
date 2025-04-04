@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-ls -loshta
-pwd
-ls -loshta .trustify/postgres/
 psql_path="$HOME/work/trustify-api-hurl-tests/trustify-api-hurl-tests/.trustify/postgres/17.2.0/bin/psql"
 dump_path="$HOME/work/trustify-api-hurl-tests/trustify-api-hurl-tests/dump.sql"
 

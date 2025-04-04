@@ -7,17 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # - name: Get the dump
-      #   run: |
-      #     curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
-      #     gzip -d dump.sql.gz
+      - name: Get the dump
+        run: |
+          curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
+          gzip -d dump.sql.gz
       - name: Download and extract trustify-pm
         run: |
-          curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.2/trustd-pm-0.2.2-x86_64-unknown-linux-gnu.tar.gz
+          curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.14/trustd-pm-0.2.14-x86_64-unknown-linux-gnu.tar.gz
           tar -xzf trustd-pm.tar.gz --strip-components=2
       - name: Download and extract hurl
         run: |
-          curl -L -o hurl.tar.gz https://github.com/Orange-OpenSource/hurl/releases/download/6.0.0/hurl-6.0.0-x86_64-unknown-linux-gnu.tar.gz
+          curl -L -o hurl.tar.gz https://github.com/Orange-OpenSource/hurl/releases/download/6.1.1/hurl-6.1.1-x86_64-unknown-linux-gnu.tar.gz
           tar -xzf hurl.tar.gz --strip-components=2
       - name: Run trustify pm-mode
         run: |
