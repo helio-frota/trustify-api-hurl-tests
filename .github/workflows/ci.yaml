@@ -25,7 +25,7 @@ jobs:
           gzip -d dump.sql.gz
       - name: Download and extract trustify-pm
         run: |
-          curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.14/trustd-pm-0.2.14-x86_64-unknown-linux-gnu.tar.gz
+          curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.16/trustd-pm-0.2.16-x86_64-unknown-linux-gnu.tar.gz
           tar xzf trustd-pm.tar.gz --strip-components=1
       - name: Download and extract hurl
         run: |
@@ -42,7 +42,8 @@ jobs:
         run: .github/scripts/restore.sh
       - name: Run the tests
         run: |
-          ./hurl --test --variables-file .env hurls/*.hurl
+          # ./hurl --test --variables-file .env hurls/*.hurl
+          ./hurl --test --variables-file .env h/*.hurl
       - name: Stop trustify pm-mode
         run: |
           killall trustd-pm
