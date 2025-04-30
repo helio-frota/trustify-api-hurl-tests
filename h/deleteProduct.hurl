@@ -4,4 +4,3 @@ HTTP *
 
 [Asserts]
 status == 200
-

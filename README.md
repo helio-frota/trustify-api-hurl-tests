@@ -9,15 +9,15 @@
 - [x] deleteImporter.hurl
 - [x] deleteProduct.hurl
 - [x] deleteSbom.hurl
-- [ ] deleteUserPreferences.hurl
-- [ ] deleteVulnerability.hurl
-- [ ] downloadAdvisory.hurl
-- [ ] downloadSbom.hurl
-- [ ] enableImporter.hurl
-- [ ] forceRunImporter.hurl
-- [ ] getAdvisory.hurl
-- [ ] getBasePurl.hurl
-- [ ] getComponent.hurl
+- [x] deleteUserPreferences.hurl
+- [x] deleteVulnerability.hurl
+- [x] downloadAdvisory.hurl
+- [x] downloadSbom.hurl
+- [x] enableImporter.hurl
+- [x] forceRunImporter.hurl
+- [x] getAdvisory.hurl
+- [x] getBasePurl.hurl
+- [x] getComponent.hurl
 - [ ] getImporter.hurl
 - [ ] getLatestComponent.hurl
 - [ ] getLicenseExport.hurl
@@ -59,4 +59,3 @@
 - [ ] uploadAdvisory.hurl
 - [ ] uploadDataset.hurl
 - [ ] uploadSbom.hurl
-

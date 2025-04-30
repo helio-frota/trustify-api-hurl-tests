@@ -1,4 +1,10 @@
-POST {{host}}/api/v2/importer/string_value/force
+POST {{host}}/api/v2/importer/cve/force
+```json
+true
 ```
 
-```
+HTTP *
+
+[Asserts]
+status == 204
+
