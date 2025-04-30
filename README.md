@@ -5,7 +5,7 @@
 - [x] analyze.hurl
 - [x] countRelatedSboms.hurl
 - [x] createImporter.hurl
-- [ ] deleteAdvisory.hurl
+- [x] deleteAdvisory.hurl
 - [ ] deleteImporter.hurl
 - [ ] deleteProduct.hurl
 - [ ] deleteSbom.hurl
