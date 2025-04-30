@@ -1,1 +1,6 @@
-DELETE {{host}}/api/v2/importer/string_value
+DELETE {{host}}/api/v2/importer/cve
+
+HTTP *
+
+[Asserts]
+status == 204

@@ -22,7 +22,7 @@ POST {{host}}/api/v2/importer/redhat-sbom
 ```
 
 HTTP *
-[Asserts]
 
+[Asserts]
 status == 409
 jsonpath "$" isCollection

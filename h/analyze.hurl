@@ -9,7 +9,7 @@ POST {{host}}/api/v2/vulnerability/analyze
 # pkg:rpm/redhat/kubevirt@2.6.10-230.el7?arch=src
 
 HTTP *
-[Asserts]
 
+[Asserts]
 status < 400
 jsonpath "$" isCollection

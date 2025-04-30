@@ -6,8 +6,8 @@
 - [x] countRelatedSboms.hurl
 - [x] createImporter.hurl
 - [x] deleteAdvisory.hurl
-- [ ] deleteImporter.hurl
-- [ ] deleteProduct.hurl
+- [x] deleteImporter.hurl
+- [x] deleteProduct.hurl
 - [ ] deleteSbom.hurl
 - [ ] deleteUserPreferences.hurl
 - [ ] deleteVulnerability.hurl
