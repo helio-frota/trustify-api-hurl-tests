@@ -2,7 +2,7 @@ POST {{host}}/api/v2/vulnerability/analyze
 ```json
 {
   "purls": [
-    "string"
+    "pkg:npm/accepts@1.3.8"
   ]
 }
 ```
