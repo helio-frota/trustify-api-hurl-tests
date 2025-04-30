@@ -8,7 +8,7 @@
 - [x] deleteAdvisory.hurl
 - [x] deleteImporter.hurl
 - [x] deleteProduct.hurl
-- [ ] deleteSbom.hurl
+- [x] deleteSbom.hurl
 - [ ] deleteUserPreferences.hurl
 - [ ] deleteVulnerability.hurl
 - [ ] downloadAdvisory.hurl
