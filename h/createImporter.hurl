@@ -1,4 +1,4 @@
-POST {{host}}/api/v2/importer/string_value
+POST {{host}}/api/v2/importer/redhat-sbom
 ```json
 {
   "sbom": {
@@ -7,16 +7,22 @@ POST {{host}}/api/v2/importer/string_value
     "fetchRetries": 3,
     "ignoreMissing": true,
     "keys": [
-      "string"
+      "https://access.redhat.com/security/data/97f5eac4.txt#77E79ABE93673533ED09EBE2DCE3823597F5EAC4"
     ],
     "labels": {},
     "onlyPatterns": [
-      "string"
+      "quarkus"
     ],
-    "period": "string",
+    "period": "1s",
     "sizeLimit": null,
-    "source": "string",
+    "source": "https://access.redhat.com/security/data/sbom/beta",
     "v3Signatures": true
   }
 }
 ```
+
+HTTP *
+[Asserts]
+
+status == 409
+jsonpath "$" isCollection
