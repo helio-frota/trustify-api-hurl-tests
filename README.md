@@ -2,3 +2,61 @@
 
 [![CI](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml/badge.svg)](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml)
 
+- [x] analyze.hurl
+- [x] countRelatedSboms.hurl
+- [x] createImporter.hurl
+- [ ] deleteAdvisory.hurl
+- [ ] deleteImporter.hurl
+- [ ] deleteProduct.hurl
+- [ ] deleteSbom.hurl
+- [ ] deleteUserPreferences.hurl
+- [ ] deleteVulnerability.hurl
+- [ ] downloadAdvisory.hurl
+- [ ] downloadSbom.hurl
+- [ ] enableImporter.hurl
+- [ ] forceRunImporter.hurl
+- [ ] getAdvisory.hurl
+- [ ] getBasePurl.hurl
+- [ ] getComponent.hurl
+- [ ] getImporter.hurl
+- [ ] getLatestComponent.hurl
+- [ ] getLicenseExport.hurl
+- [ ] getOrganization.hurl
+- [ ] getProduct.hurl
+- [ ] getPurl.hurl
+- [ ] getSbomAdvisories.hurl
+- [ ] getSbom.hurl
+- [ ] getSpdxLicense.hurl
+- [ ] getUserPreferences.hurl
+- [ ] getVulnerability.hurl
+- [ ] getWeakness.hurl
+- [ ] info.hurl
+- [ ] listAdvisories.hurl
+- [ ] listBasePurls.hurl
+- [ ] listImporterReports.hurl
+- [ ] listImporters.hurl
+- [ ] listOrganizations.hurl
+- [ ] listPackages.hurl
+- [ ] listProducts.hurl
+- [ ] listPurl.hurl
+- [ ] listRelatedPackages.hurl
+- [ ] listRelatedSboms.hurl
+- [ ] listSboms.hurl
+- [ ] listSpdxLicenses.hurl
+- [ ] listVulnerabilities.hurl
+- [ ] listWeaknesses.hurl
+- [ ] patchAdvisoryLabels.hurl
+- [ ] patchImporter.hurl
+- [ ] patchSbomLabels.hurl
+- [ ] renderSbomGraph.hurl
+- [ ] searchComponent.hurl
+- [ ] searchLatestComponent.hurl
+- [ ] setUserPreferences.hurl
+- [ ] status.hurl
+- [ ] updateAdvisoryLabels.hurl
+- [ ] updateImporter.hurl
+- [ ] updateSbomLabels.hurl
+- [ ] uploadAdvisory.hurl
+- [ ] uploadDataset.hurl
+- [ ] uploadSbom.hurl
+
