@@ -3,7 +3,7 @@ GET {{host}}/api/v2/sbom/count-by-package
 [
   {
     "cpe": null,
-    "purl": null
+    "purl": "pkg:npm/accepts@1.3.8"
   }
 ]
 ```
