@@ -24,10 +24,10 @@
 - [x] getOrganization.hurl
 - [x] getProduct.hurl
 - [x] getPurl.hurl
-- [ ] getSbomAdvisories.hurl
-- [ ] getSbom.hurl
+- [x] getSbomAdvisories.hurl
+- [x] getSbom.hurl
 - [ ] getSpdxLicense.hurl
-- [ ] getUserPreferences.hurl
+- [x] getUserPreferences.hurl
 - [ ] getVulnerability.hurl
 - [ ] getWeakness.hurl
 - [ ] info.hurl
