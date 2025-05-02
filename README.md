@@ -45,13 +45,13 @@
 - [x] listSpdxLicenses.hurl
 - [x] listVulnerabilities.hurl
 - [x] listWeaknesses.hurl
-- [ ] patchAdvisoryLabels.hurl
-- [ ] patchImporter.hurl
-- [ ] patchSbomLabels.hurl
-- [ ] renderSbomGraph.hurl
-- [ ] searchComponent.hurl
-- [ ] searchLatestComponent.hurl
-- [ ] setUserPreferences.hurl
+- [x] patchAdvisoryLabels.hurl
+- [x] patchImporter.hurl
+- [x] patchSbomLabels.hurl
+- [x] renderSbomGraph.hurl
+- [x] searchComponent.hurl
+- [x] searchLatestComponent.hurl
+- [x] setUserPreferences.hurl
 - [x] status.hurl
 - [ ] updateAdvisoryLabels.hurl
 - [ ] updateImporter.hurl

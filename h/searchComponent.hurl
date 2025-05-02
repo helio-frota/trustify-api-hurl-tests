@@ -1,10 +1,12 @@
-GET {{host}}/api/v2/analysis/component
+GET {{host}}/api/v2/analysis/component?q=spymemcached
 
 HTTP *
-[Asserts]
 
+[Asserts]
 status < 400
 jsonpath "$" isCollection
 jsonpath "$.items" isCollection
 jsonpath "$.total" isInteger
 jsonpath "$.total" >= 0
+
+# NOTE: This is slow

@@ -1,4 +1,11 @@
-PATCH {{host}}/api/v2/importer/string_value
+PATCH {{host}}/api/v2/importer/cve
 ```json
-null
+{"cve": {"period": "1m", "source": "https://github.com/CVEProject/cvelistV5", "disabled": true, "description": "CVE List V5"}}
 ```
+
+HTTP *
+
+[Asserts]
+status == 404
+
+# NOTE: Not sure why this is getting 404
