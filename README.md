@@ -18,12 +18,12 @@
 - [x] getAdvisory.hurl
 - [x] getBasePurl.hurl
 - [x] getComponent.hurl
-- [ ] getImporter.hurl
-- [ ] getLatestComponent.hurl
-- [ ] getLicenseExport.hurl
-- [ ] getOrganization.hurl
-- [ ] getProduct.hurl
-- [ ] getPurl.hurl
+- [x] getImporter.hurl
+- [x] getLatestComponent.hurl
+- [x] getLicenseExport.hurl
+- [x] getOrganization.hurl
+- [x] getProduct.hurl
+- [x] getPurl.hurl
 - [ ] getSbomAdvisories.hurl
 - [ ] getSbom.hurl
 - [ ] getSpdxLicense.hurl
