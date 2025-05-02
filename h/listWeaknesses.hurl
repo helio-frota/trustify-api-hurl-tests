@@ -1,8 +1,8 @@
 GET {{host}}/api/v2/weakness
 
 HTTP *
-[Asserts]
 
+[Asserts]
 status < 400
 jsonpath "$" isCollection
 jsonpath "$.items" isCollection

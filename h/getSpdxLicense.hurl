@@ -1,7 +1,7 @@
-GET {{host}}/api/v2/license/spdx/license/string_value
+GET {{host}}/api/v2/license/spdx/license/MIT
 
 HTTP *
-[Asserts]
 
+[Asserts]
 status < 400
 jsonpath "$" isCollection

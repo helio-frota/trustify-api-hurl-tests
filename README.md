@@ -26,25 +26,25 @@
 - [x] getPurl.hurl
 - [x] getSbomAdvisories.hurl
 - [x] getSbom.hurl
-- [ ] getSpdxLicense.hurl
+- [x] getSpdxLicense.hurl
 - [x] getUserPreferences.hurl
-- [ ] getVulnerability.hurl
-- [ ] getWeakness.hurl
-- [ ] info.hurl
-- [ ] listAdvisories.hurl
-- [ ] listBasePurls.hurl
+- [x] getVulnerability.hurl
+- [x] getWeakness.hurl
+- [x] info.hurl
+- [x] listAdvisories.hurl
+- [x] listBasePurls.hurl
 - [ ] listImporterReports.hurl
-- [ ] listImporters.hurl
-- [ ] listOrganizations.hurl
+- [x] listImporters.hurl
+- [x] listOrganizations.hurl
 - [ ] listPackages.hurl
-- [ ] listProducts.hurl
-- [ ] listPurl.hurl
+- [x] listProducts.hurl
+- [x] listPurl.hurl
 - [ ] listRelatedPackages.hurl
 - [ ] listRelatedSboms.hurl
-- [ ] listSboms.hurl
-- [ ] listSpdxLicenses.hurl
-- [ ] listVulnerabilities.hurl
-- [ ] listWeaknesses.hurl
+- [x] listSboms.hurl
+- [x] listSpdxLicenses.hurl
+- [x] listVulnerabilities.hurl
+- [x] listWeaknesses.hurl
 - [ ] patchAdvisoryLabels.hurl
 - [ ] patchImporter.hurl
 - [ ] patchSbomLabels.hurl
