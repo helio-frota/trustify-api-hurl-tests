@@ -1,8 +1,8 @@
-POST {{host}}/api/v2/sbom?labels=string_value
+POST {{host}}/api/v2/sbom
 
-HTTP *
-[Asserts]
+[QueryStringParams]
+labels:aaa
 
-status < 400
-jsonpath "$" isCollection
-jsonpath "$.id" isString
+file,h/model-mesh.json;
+
+HTTP 201

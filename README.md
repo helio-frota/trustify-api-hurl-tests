@@ -53,9 +53,9 @@
 - [x] searchLatestComponent.hurl
 - [x] setUserPreferences.hurl
 - [x] status.hurl
-- [ ] updateAdvisoryLabels.hurl
-- [ ] updateImporter.hurl
-- [ ] updateSbomLabels.hurl
-- [ ] uploadAdvisory.hurl
-- [ ] uploadDataset.hurl
-- [ ] uploadSbom.hurl
+- [x] updateAdvisoryLabels.hurl
+- [x] updateImporter.hurl
+- [x] updateSbomLabels.hurl
+- [x] uploadAdvisory.hurl
+- [x] uploadDataset.hurl
+- [x] uploadSbom.hurl

@@ -1,22 +1,9 @@
-PUT {{host}}/api/v2/importer/string_value
+PUT {{host}}/api/v2/importer/cve
 ```json
-{
-  "sbom": {
-    "description": "string",
-    "disabled": true,
-    "fetchRetries": 3,
-    "ignoreMissing": true,
-    "keys": [
-      "string"
-    ],
-    "labels": {},
-    "onlyPatterns": [
-      "string"
-    ],
-    "period": "string",
-    "sizeLimit": null,
-    "source": "string",
-    "v3Signatures": true
-  }
-}
+{"cve": {"period": "1m", "source": "https://github.com/CVEProject/cvelistV5", "disabled": true, "description": "CVE List V5"}}
 ```
+
+HTTP *
+
+[Asserts]
+status < 400
