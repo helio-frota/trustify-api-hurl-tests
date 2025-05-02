@@ -1,4 +1,4 @@
-POST {{host}}/api/v2/importer/cve/force
+POST {{host}}/api/v2/importer/cwe/force
 ```json
 true
 ```
