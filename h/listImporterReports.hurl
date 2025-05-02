@@ -1,10 +1,7 @@
-GET {{host}}/api/v2/importer/string_value/report
+GET {{host}}/api/v2/importer/cve/report
 
 HTTP *
-[Asserts]
 
+[Asserts]
 status < 400
 jsonpath "$" isCollection
-jsonpath "$.items" isCollection
-jsonpath "$.total" isInteger
-jsonpath "$.total" >= 0

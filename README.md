@@ -33,14 +33,14 @@
 - [x] info.hurl
 - [x] listAdvisories.hurl
 - [x] listBasePurls.hurl
-- [ ] listImporterReports.hurl
+- [x] listImporterReports.hurl
 - [x] listImporters.hurl
 - [x] listOrganizations.hurl
-- [ ] listPackages.hurl
+- [x] listPackages.hurl
 - [x] listProducts.hurl
 - [x] listPurl.hurl
-- [ ] listRelatedPackages.hurl
-- [ ] listRelatedSboms.hurl
+- [x] listRelatedPackages.hurl
+- [x] listRelatedSboms.hurl
 - [x] listSboms.hurl
 - [x] listSpdxLicenses.hurl
 - [x] listVulnerabilities.hurl
@@ -52,7 +52,7 @@
 - [ ] searchComponent.hurl
 - [ ] searchLatestComponent.hurl
 - [ ] setUserPreferences.hurl
-- [ ] status.hurl
+- [x] status.hurl
 - [ ] updateAdvisoryLabels.hurl
 - [ ] updateImporter.hurl
 - [ ] updateSbomLabels.hurl
