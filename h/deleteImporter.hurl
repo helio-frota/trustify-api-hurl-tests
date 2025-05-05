@@ -1,4 +1,4 @@
-DELETE {{host}}/api/v2/importer/cve
+DELETE {{host}}/api/v2/importer/osv-r
 
 HTTP *
 
