@@ -48,7 +48,7 @@ jobs:
       - name: Dump restore
         run: .github/scripts/restore.sh
       - name: Stop trustify pm-mode
-        run: killall trustd
+        run: killall trustd-pm
       - name: Run trustify pm-mode (again)
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
