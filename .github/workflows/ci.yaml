@@ -19,6 +19,11 @@ jobs:
           sudo rm -Rf ${JAVA_HOME_17_X64}
           sudo rm -Rf ${RUBY_PATH}
       - uses: actions/checkout@v4
+      - name: Cache Theseus Postgresql Installation
+        uses: actions/cache@v4
+        with:
+          path: ~/.theseus/postgresql
+          key: ${{ runner.os }}-theseus-postgresql-${{ hashFiles('**/Cargo.lock') }}
       - name: Get the dump
         run: |
           curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
@@ -32,6 +37,8 @@ jobs:
           curl -L -o hurl.tar.gz https://github.com/Orange-OpenSource/hurl/releases/download/6.1.1/hurl-6.1.1-x86_64-unknown-linux-gnu.tar.gz
           tar -xzf hurl.tar.gz --strip-components=2
       - name: Run trustify pm-mode
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
           AUTH_DISABLED=true ./trustd-pm &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
