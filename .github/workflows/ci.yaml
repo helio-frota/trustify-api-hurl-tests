@@ -32,8 +32,6 @@ jobs:
           curl -L -o hurl.tar.gz https://github.com/Orange-OpenSource/hurl/releases/download/6.1.1/hurl-6.1.1-x86_64-unknown-linux-gnu.tar.gz
           tar -xzf hurl.tar.gz --strip-components=2
       - name: Run trustify pm-mode
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
           AUTH_DISABLED=true ./trustd-pm &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
@@ -45,8 +43,6 @@ jobs:
       - name: Stop trustify pm-mode
         run: killall trustd-pm
       - name: Run trustify pm-mode (again)
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
           AUTH_DISABLED=true ./trustd-pm &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
