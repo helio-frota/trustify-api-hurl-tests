@@ -42,8 +42,7 @@ jobs:
         run: .github/scripts/restore.sh
       - name: Run the tests
         run: |
-          # ./hurl --test --variables-file .env hurls/*.hurl
-          ./hurl --test --variables-file .env h/*.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/*.hurl
       - name: Stop trustify pm-mode
         run: |
           killall trustd-pm
