@@ -46,7 +46,6 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.theseus/postgresql
-          key: ${{ runner.os }}-theseus-postgresql-${{ hashFiles('**/Cargo.lock') }}
       - name: Stop trustify pm-mode
         run: killall trustd-pm
       # - name: Run trustify pm-mode (again)
