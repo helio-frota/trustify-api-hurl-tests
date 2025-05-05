@@ -2,16 +2,6 @@
 
 [![CI](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml/badge.svg)](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml)
 
-TODO: investigate the failures
-
-```
-Executed files:    57
-Executed requests: 57 (1.8/s)
-Succeeded files:   33 (57.9%)
-Failed files:      24 (42.1%)
-Duration:          31564 ms
-```
-
 - [x] analyze.hurl
 - [x] countRelatedSboms.hurl
 - [x] createImporter.hurl
