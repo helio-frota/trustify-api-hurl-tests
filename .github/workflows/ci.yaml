@@ -40,9 +40,27 @@ jobs:
           done
       - name: Dump restore
         run: .github/scripts/restore.sh
-      - name: Run the tests
+      - name: Test - list
         run: |
-          ./hurl --test --jobs 1 --variables-file .env h/*.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/list*.hurl
+      - name: Test - get
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/get*.hurl
+      - name: Test - update
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/update*.hurl
+      - name: Test - upload
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/upload*.hurl
+      - name: Test - patch
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/patch*.hurl
+      - name: Test - other
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/analyze.hurl h/countRelatedSboms.hurl h/createImporter.hurl h/downloadAdvisory.hurl h/downloadSbom.hurl h/enableImporter.hurl h/forceRunImporter.hurl h/info.hurl h/renderSbomGraph.hurl h/searchComponent.hurl h/searchLatestComponent.hurl h/setUserPreferences.hurl h/status.hurl
+      - name: Test - delete
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/delete*.hurl
       - name: Stop trustify pm-mode
         run: |
           killall trustd-pm
