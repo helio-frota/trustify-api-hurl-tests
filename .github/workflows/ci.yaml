@@ -40,44 +40,40 @@ jobs:
             echo "Waiting for trustd-pm..."
             sleep 3
           done
-      # - name: Dump restore
-      #   run: .github/scripts/restore.sh
-      - name: Cache Theseus Postgresql Installation
-        uses: actions/cache@v4
-        with:
-          path: ~/.theseus/postgresql
+      - name: Dump restore
+        run: .github/scripts/restore.sh
       - name: Stop trustify pm-mode
         run: killall trustd-pm
-      # - name: Run trustify pm-mode (again)
-      #   env:
-      #     GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      #   run: |
-      #     AUTH_DISABLED=true ./trustd-pm &
-      #     until curl --output /dev/null --silent --head --fail http://localhost:8080; do
-      #       echo "Waiting for trustd-pm..."
-      #       sleep 3
-      #     done
-      # - name: Test - list
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/list*.hurl
-      # - name: Test - get
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/get*.hurl
-      # - name: Test - update
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/update*.hurl
-      # - name: Test - upload
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/upload*.hurl
-      # - name: Test - patch
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/patch*.hurl
-      # - name: Test - other
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/analyze.hurl h/countRelatedSboms.hurl h/createImporter.hurl h/downloadAdvisory.hurl h/downloadSbom.hurl h/enableImporter.hurl h/forceRunImporter.hurl h/info.hurl h/renderSbomGraph.hurl h/searchComponent.hurl h/searchLatestComponent.hurl h/setUserPreferences.hurl h/status.hurl
-      # - name: Test - delete
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/delete*.hurl
-      # - name: Stop trustify pm-mode
-      #   run: |
-      #     killall trustd-pm
+      - name: Run trustify pm-mode (again)
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          AUTH_DISABLED=true ./trustd-pm &
+          until curl --output /dev/null --silent --head --fail http://localhost:8080; do
+            echo "Waiting for trustd-pm..."
+            sleep 3
+          done
+      - name: Test - list
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/list*.hurl
+      - name: Test - get
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/get*.hurl
+      - name: Test - update
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/update*.hurl
+      - name: Test - upload
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/upload*.hurl
+      - name: Test - patch
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/patch*.hurl
+      - name: Test - other
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/analyze.hurl h/countRelatedSboms.hurl h/createImporter.hurl h/downloadAdvisory.hurl h/downloadSbom.hurl h/enableImporter.hurl h/forceRunImporter.hurl h/info.hurl h/renderSbomGraph.hurl h/searchComponent.hurl h/searchLatestComponent.hurl h/setUserPreferences.hurl h/status.hurl
+      - name: Test - delete
+        run: |
+          ./hurl --test --jobs 1 --variables-file .env h/delete*.hurl
+      - name: Stop trustify pm-mode
+        run: |
+          killall trustd-pm
