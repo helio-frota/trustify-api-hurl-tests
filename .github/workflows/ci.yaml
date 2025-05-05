@@ -43,10 +43,21 @@ jobs:
           AUTH_DISABLED=true ./trustd-pm &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
             echo "Waiting for trustd-pm..."
-            sleep 2
+            sleep 3
           done
       - name: Dump restore
         run: .github/scripts/restore.sh
+      - name: Stop trustify pm-mode
+        run: killall trustd
+      - name: Run trustify pm-mode (again)
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          AUTH_DISABLED=true ./trustd-pm &
+          until curl --output /dev/null --silent --head --fail http://localhost:8080; do
+            echo "Waiting for trustd-pm..."
+            sleep 3
+          done
       - name: Test - list
         run: |
           ./hurl --test --jobs 1 --variables-file .env h/list*.hurl
