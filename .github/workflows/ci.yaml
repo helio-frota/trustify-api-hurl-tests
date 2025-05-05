@@ -19,11 +19,6 @@ jobs:
           sudo rm -Rf ${JAVA_HOME_17_X64}
           sudo rm -Rf ${RUBY_PATH}
       - uses: actions/checkout@v4
-      - name: Cache Theseus Postgresql Installation
-        uses: actions/cache@v4
-        with:
-          path: ~/.theseus/postgresql
-          key: ${{ runner.os }}-theseus-postgresql-${{ hashFiles('**/Cargo.lock') }}
       - name: Get the dump
         run: |
           curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
@@ -47,6 +42,11 @@ jobs:
           done
       # - name: Dump restore
       #   run: .github/scripts/restore.sh
+      - name: Cache Theseus Postgresql Installation
+        uses: actions/cache@v4
+        with:
+          path: ~/.theseus/postgresql
+          key: ${{ runner.os }}-theseus-postgresql-${{ hashFiles('**/Cargo.lock') }}
       - name: Stop trustify pm-mode
         run: killall trustd-pm
       # - name: Run trustify pm-mode (again)
