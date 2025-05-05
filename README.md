@@ -59,4 +59,3 @@
 - [x] uploadAdvisory.hurl
 - [x] uploadDataset.hurl
 - [x] uploadSbom.hurl
-
