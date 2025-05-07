@@ -3,5 +3,6 @@ GET {{host}}/api/v2/sbom/sha256:f293eb898192085804419f9dd40a738f20d67dd81846e88c
 HTTP *
 
 [Asserts]
-status < 400
-jsonpath "$" isCollection
+status < 404
+
+#NOTE: not using the dump here

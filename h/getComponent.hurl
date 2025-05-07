@@ -1,4 +1,4 @@
-GET {{host}}/api/v2/analysis/component?q=spymemcached&ancestors=1
+GET {{host}}/api/v2/analysis/component?q=maven&ancestors=1
 
 HTTP *
 

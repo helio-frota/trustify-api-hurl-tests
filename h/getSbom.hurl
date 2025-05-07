@@ -1,4 +1,4 @@
-GET {{host}}/api/v2/sbom/urn:uuid:0195baf5-dcdd-7943-b26f-eb5a8e15b2ef
+GET {{host}}/api/v2/sbom/urn:uuid:0196a2cd-0da6-78a3-bceb-766e24bf4fee
 
 HTTP *
 

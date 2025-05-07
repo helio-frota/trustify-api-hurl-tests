@@ -1,4 +1,4 @@
-GET {{host}}/api/v2/product/urn:uuid:a84bcbc9-7830-5957-9995-b3470b6f0eec
+GET {{host}}/api/v2/product/urn:uuid:cedf0b24-0a46-587e-aae9-f9dd14288c71
 
 HTTP *
 
