@@ -1,4 +1,4 @@
-DELETE {{host}}/api/v2/advisory/urn:uuid:ed944a21-a2a2-4d4d-811b-f4427318b6c2
+DELETE {{host}}/api/v2/advisory/urn:uuid:2a5a0562-70b1-4157-b117-ac9374dd7c34
 
 HTTP *
 

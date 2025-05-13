@@ -1,4 +1,4 @@
-DELETE {{host}}/api/v2/product/urn:uuid:da636161-b451-5c4c-bc9e-1a53f0b78e9b
+DELETE {{host}}/api/v2/product/urn:uuid:2e63e91a-a801-51c9-a64d-54542eb982c3
 
 HTTP *
 

@@ -1,4 +1,4 @@
-PATCH {{host}}/api/v2/advisory/urn:uuid:09ea6c1a-4544-46ca-9612-2494d523e029/label
+PATCH {{host}}/api/v2/advisory/urn:uuid:2a5a0562-70b1-4157-b117-ac9374dd7c34/label
 ```json
 {"foo":"bar"}
 ```

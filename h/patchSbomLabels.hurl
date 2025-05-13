@@ -1,4 +1,4 @@
-PATCH {{host}}/api/v2/sbom/urn:uuid:0195baf5-d07e-7d32-87c2-3158e9e6344b/label
+PATCH {{host}}/api/v2/sbom/urn:uuid:0196c99d-fe73-7492-8b20-7c734c58e1b5/label
 ```json
 {"foo":"bar"}
 ```
