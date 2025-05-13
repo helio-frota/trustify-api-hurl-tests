@@ -2,7 +2,14 @@
 
 [![CI](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml/badge.svg)](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml)
 
-- [x] analyze.hurl
+* analyze.hurl
+* sbom
+  * list
+  * get
+  * update
+  * patch
+  * delete
+
 - [x] countRelatedSboms.hurl
 - [x] createImporter.hurl
 - [x] deleteAdvisory.hurl
