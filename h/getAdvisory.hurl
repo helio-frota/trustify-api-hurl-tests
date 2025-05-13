@@ -1,4 +1,4 @@
-GET {{host}}/api/v2/advisory/urn:uuid:2d25fbc3-568a-495b-a2fa-d139de907bf9
+GET {{host}}/api/v2/advisory/urn:uuid:64c71aad-53cb-46bf-94bb-00f979dd358f
 
 HTTP *
 

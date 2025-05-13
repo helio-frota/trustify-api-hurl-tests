@@ -1,4 +1,4 @@
-GET {{host}}/api/v2/sbom/urn:uuid:0196a2cd-0da6-78a3-bceb-766e24bf4fee/license-export
+GET {{host}}/api/v2/sbom/urn:uuid:0196c99d-fdfe-7040-91cc-bc91b7f8151b/license-export
 
 HTTP *
 

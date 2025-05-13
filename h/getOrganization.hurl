@@ -1,4 +1,4 @@
-GET {{host}}/api/v2/organization/urn:uuid:46b31c7f-af07-4c83-b768-946906fa7f7d
+GET {{host}}/api/v2/organization/urn:uuid:ad57767d-1aff-4f5c-ae0d-51bced9ed2a7
 
 HTTP *
 
