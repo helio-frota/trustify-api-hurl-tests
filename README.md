@@ -50,19 +50,18 @@
   * list
   * get
   * delete
+* organization
+  * list
+  * get
+* purl
+  * list
+  * get
+  * list base
+  * get base
+* other
+  * list spdx licenses
+  * get spdx license
+  * list weaknesses
+  * get weakness
+  * info
 
-- [x] deleteUserPreferences.hurl
-- [x] getBasePurl.hurl
-- [x] getOrganization.hurl
-- [x] getPurl.hurl
-- [x] getSpdxLicense.hurl
-- [x] getUserPreferences.hurl
-- [x] getWeakness.hurl
-- [x] info.hurl
-- [x] listBasePurls.hurl
-- [x] listOrganizations.hurl
-- [x] listPackages.hurl
-- [x] listPurl.hurl
-- [x] listSpdxLicenses.hurl
-- [x] listWeaknesses.hurl
-- [x] setUserPreferences.hurl

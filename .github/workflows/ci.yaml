@@ -71,3 +71,5 @@ jobs:
           ./hurl --test --jobs 1 --variables-file .env h/importer.hurl
           ./hurl --test --jobs 1 --variables-file .env h/importer.hurl
           ./hurl --test --jobs 1 --variables-file .env h/product.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/purl.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/other.hurl
