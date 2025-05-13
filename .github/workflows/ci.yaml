@@ -62,18 +62,9 @@ jobs:
       - name: Test - upload
         run: |
           ./hurl --test --jobs 1 --variables-file .env h/upload*.hurl
-      - name: Test - list
+      - name: Test
         run: |
           ./hurl --test --jobs 1 --variables-file .env h/sbom.hurl
-      # - name: Test - get
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/get*.hurl
-      # - name: Test - update
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/update*.hurl
-      # - name: Test - patch
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/patch*.hurl
-      # - name: Test - other
-      #   run: |
-      #     ./hurl --test --jobs 1 --variables-file .env h/analyze.hurl h/createImporter.hurl h/downloadAdvisory.hurl h/enableImporter.hurl h/forceRunImporter.hurl h/info.hurl h/searchComponent.hurl h/searchLatestComponent.hurl h/setUserPreferences.hurl h/status.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/advisory.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/vulnerability.hurl
+          ./hurl --test --jobs 1 --variables-file .env h/analysis.hurl
