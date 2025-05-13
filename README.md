@@ -6,20 +6,23 @@
 * sbom
   * list
   * get
-  * update
-  * patch
+  * update label
+  * patch label
+  * download
+  * render graph
+  * advisories
+  * count by package
   * delete
+* upload sbom
 
 - [x] countRelatedSboms.hurl
 - [x] createImporter.hurl
 - [x] deleteAdvisory.hurl
 - [x] deleteImporter.hurl
 - [x] deleteProduct.hurl
-- [x] deleteSbom.hurl
 - [x] deleteUserPreferences.hurl
 - [x] deleteVulnerability.hurl
 - [x] downloadAdvisory.hurl
-- [x] downloadSbom.hurl
 - [x] enableImporter.hurl
 - [x] forceRunImporter.hurl
 - [x] getAdvisory.hurl
@@ -31,8 +34,6 @@
 - [x] getOrganization.hurl
 - [x] getProduct.hurl
 - [x] getPurl.hurl
-- [x] getSbomAdvisories.hurl
-- [x] getSbom.hurl
 - [x] getSpdxLicense.hurl
 - [x] getUserPreferences.hurl
 - [x] getVulnerability.hurl
@@ -48,13 +49,11 @@
 - [x] listPurl.hurl
 - [x] listRelatedPackages.hurl
 - [x] listRelatedSboms.hurl
-- [x] listSboms.hurl
 - [x] listSpdxLicenses.hurl
 - [x] listVulnerabilities.hurl
 - [x] listWeaknesses.hurl
 - [x] patchAdvisoryLabels.hurl
 - [x] patchImporter.hurl
-- [x] patchSbomLabels.hurl
 - [x] renderSbomGraph.hurl
 - [x] searchComponent.hurl
 - [x] searchLatestComponent.hurl
@@ -62,7 +61,5 @@
 - [x] status.hurl
 - [x] updateAdvisoryLabels.hurl
 - [x] updateImporter.hurl
-- [x] updateSbomLabels.hurl
 - [x] uploadAdvisory.hurl
 - [x] uploadDataset.hurl
-- [x] uploadSbom.hurl
