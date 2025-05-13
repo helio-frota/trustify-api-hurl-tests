@@ -1,8 +1,7 @@
-GET {{host}}/api/v2/sbom/sha256:f293eb898192085804419f9dd40a738f20d67dd81846e88c6720f692ec5f3081/advisory
+GET {{host}}/api/v2/sbom/sha256:e7d0c10aaf35270ee762b9442a8012cbdfbd3aafaf01d408c04f8a66543e3449/advisory
 
 HTTP *
 
 [Asserts]
 status < 404
 
-#NOTE: not using the dump here
