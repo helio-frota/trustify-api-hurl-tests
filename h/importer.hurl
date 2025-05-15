@@ -29,13 +29,6 @@ HTTP 201
 GET {{host}}/api/v2/importer/redhat-sbom1
 HTTP 200
 
-# Enable
-PUT {{host}}/api/v2/importer/redhat-sbom1/enabled
-```json
-true
-```
-HTTP 201
-
 # List
 GET {{host}}/api/v2/importer
 HTTP 200
