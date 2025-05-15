@@ -42,14 +42,14 @@ POST {{host}}/api/v2/importer/redhat-sbom1/force
 ```json
 true
 ```
-HTTP 201
+HTTP 204
 
 # Update
 PUT {{host}}/api/v2/importer/cve
 ```json
 {"cve": {"period": "1m", "source": "https://github.com/CVEProject/cvelistV5", "disabled": true, "description": "CVE List V5"}}
 ```
-HTTP 201
+HTTP 204
 
 # Patch
 PATCH {{host}}/api/v2/importer/cve
@@ -60,4 +60,4 @@ HTTP 412
 
 # Delete
 DELETE {{host}}/api/v2/importer/redhat-sbom1
-HTTP 201
+HTTP 204
