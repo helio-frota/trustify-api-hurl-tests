@@ -13,8 +13,8 @@ GET {{host}}/api/v2/weakness
 HTTP 200
 
 # Get weakness
-GET {{host}}/api/v2/weakness/aaaaaaa
-HTTP 200
+# GET {{host}}/api/v2/weakness/aaaaaaa
+# HTTP 200
 
 # Info
 GET {{host}}/.well-known/trustify
