@@ -3,7 +3,7 @@
 [![CI](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml/badge.svg)](https://github.com/helio-frota/trustify-api-hurl-tests/actions/workflows/ci.yaml)
 
 >[!NOTE]
-> The reasons for this repository's existence are:
+> The reasons for this repository's existence are [ATM]:
 
 * To attempt accessing all existing endpoints to generate traces and verify them
 using OpenTelemetry, since we can instrument all functions (sync, async, pub, and private)
