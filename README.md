@@ -8,7 +8,7 @@
 * To attempt accessing all existing endpoints to generate traces and verify them
 using OpenTelemetry, since we can instrument all functions (sync, async, pub, and private)
 with the instrument macro.
-* To help me learn part of the system's business logic.
+* To help me learn (a small) part of the system's business logic.
 
 ---
 
