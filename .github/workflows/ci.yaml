@@ -19,10 +19,10 @@ jobs:
           sudo rm -Rf ${JAVA_HOME_17_X64}
           sudo rm -Rf ${RUBY_PATH}
       - uses: actions/checkout@v4
-      # - name: Get the dump
-      #   run: |
-      #     curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
-      #     gzip -d dump.sql.gz
+      - name: Get the dump
+        run: |
+          curl --retry 50 --retry-max-time 3600 -sSL https://trustify-dumps.s3.eu-west-1.amazonaws.com/20250323T044433Z/dump.sql.gz -o dump.sql.gz
+          gzip -d dump.sql.gz
       # - name: Download and extract trustify-pm
       #   run: |
       #     curl -L -o trustd-pm.tar.gz https://github.com/trustification/trustify/releases/download/v0.2.17/trustd-pm-0.2.17-x86_64-unknown-linux-gnu.tar.gz
@@ -35,11 +35,11 @@ jobs:
         run: |
           git clone https://github.com/trustification/trustify.git
           cd trustify
-          cargo build
+          cargo build --bin trustd --features pm
           AUTH_DISABLED=true cargo run --bin trustd &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
             echo "Waiting for trustify..."
-            sleep 3
+            sleep 5
           done
       # - name: Run trustify pm-mode
       #   run: |
@@ -48,20 +48,20 @@ jobs:
       #       echo "Waiting for trustd-pm..."
       #       sleep 3
       #     done
-      # - name: Dump restore
-      #   run: .github/scripts/restore.sh
-      # - name: Stop trustify pm-mode
-      #   run: killall trustd-pm
-      # - name: Run trustify pm-mode (again)
-      #   run: |
-      #     AUTH_DISABLED=true ./trustd-pm &
-      #     until curl --output /dev/null --silent --head --fail http://localhost:8080; do
-      #       echo "Waiting for trustd-pm..."
-      #       sleep 3
-      #     done
-      - name: Test - upload
+      - name: Dump restore
+        run: .github/scripts/restore.sh
+      - name: Stop trustify pm-mode
+        run: killall trustd-pm
+      - name: Run trustify pm-mode (again)
         run: |
-          ./hurl --test --jobs 1 --variables-file .env h/upload*.hurl
+          AUTH_DISABLED=true cargo run --bin trustd &
+          until curl --output /dev/null --silent --head --fail http://localhost:8080; do
+            echo "Waiting for trustify..."
+            sleep 5
+          done
+      # - name: Test - upload
+      #   run: |
+      #     ./hurl --test --jobs 1 --variables-file .env h/upload*.hurl
       - name: Test
         run: |
           ./hurl --test --jobs 1 --variables-file .env h/sbom.hurl
