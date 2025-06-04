@@ -54,6 +54,7 @@ jobs:
         run: killall trustd
       - name: Run trustify pm-mode (again)
         run: |
+          cd trustify
           AUTH_DISABLED=true cargo run --bin trustd &
           until curl --output /dev/null --silent --head --fail http://localhost:8080; do
             echo "Waiting for trustify..."
