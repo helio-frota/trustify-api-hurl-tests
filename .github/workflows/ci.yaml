@@ -17,6 +17,7 @@ jobs:
           sudo rm -Rf ${JAVA_HOME_8_X64}
           sudo rm -Rf ${JAVA_HOME_11_X64}
           sudo rm -Rf ${JAVA_HOME_17_X64}
+          sudo rm -Rf ${JAVA_HOME_21_X64}
           sudo rm -Rf ${RUBY_PATH}
           df -h
 
