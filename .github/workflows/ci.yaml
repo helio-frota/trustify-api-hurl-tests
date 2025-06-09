@@ -22,6 +22,10 @@ jobs:
           sudo rm -Rf ${JAVA_HOME_11_X64}
           sudo rm -Rf ${JAVA_HOME_17_X64}
           sudo rm -Rf ${RUBY_PATH}
+          sudo apt purge -y \
+            firefox \
+            google-chrome-stable \
+            microsoft-edge-stable
           df -h
 
       # - uses: actions/checkout@v4
