@@ -14,6 +14,7 @@ jobs:
           sudo rm -rf /opt/ghc
           sudo rm -rf /opt/hostedtoolcache/CodeQL
           sudo rm -rf /opt/hostedtoolcache/go
+          sudo rm -rf /usr/local/lib/node_modules
           sudo docker image prune --all --force
           sudo rm -Rf ${JAVA_HOME_8_X64}
           sudo rm -Rf ${JAVA_HOME_11_X64}
