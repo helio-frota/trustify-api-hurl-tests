@@ -13,14 +13,13 @@ jobs:
           sudo rm -rf /usr/local/lib/android
           sudo rm -rf /opt/ghc
           sudo rm -rf /opt/hostedtoolcache/CodeQL
+          sudo rm -rf /opt/hostedtoolcache/go
           sudo docker image prune --all --force
           sudo rm -Rf ${JAVA_HOME_8_X64}
           sudo rm -Rf ${JAVA_HOME_11_X64}
           sudo rm -Rf ${JAVA_HOME_17_X64}
           sudo rm -Rf ${JAVA_HOME_21_X64}
           sudo rm -Rf ${RUBY_PATH}
-          sudo docker image prune --all --force
-          sudo docker builder prune -a
           df -h
 
       # - uses: actions/checkout@v4
